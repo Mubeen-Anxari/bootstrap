@@ -6,28 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 </head>
-<body>
-    <h1 class="d-flex justify-content-center text-warning pt-5" style="font-style: oblique;">Metasoftic</h1>
-    <div class="d-flex">
-        <div class=" border border-2 border border-danger bg-warning " style=" width: 50%; height: 40px; font-size: 2rem; font-style: italic;">Mubeen</div>
-        <div class=" border border-2 border border-warning bg-primary" style="width: 50%; height: 40px;  font-size: 2rem; font-style: italic;">Zulfiqar</div>
-    </div>
+<body class="bg-info">
+    <h1 class="border-top text-warning border-2 border-danger">AnXaRi</h1>
     <br>
-    <div class="d-flex">
-        <div class=" border border-2 border border-warning bg-danger " style=" width: 70%; height: 40px; font-size: 2rem; font-style: italic;">Mubeen</div>
-        <div class=" border border-2 border border-warning bg-success" style="width: 30%; height: 40px;  font-size: 2rem; font-style: italic;">Zulfiqar</div>
-    </div>
+    <h1 class="border-bottom text-primary border-5 border-success">AnXaRi</h1>
     <br>
-    <div class="d-flex">
-        <div class=" border border-2 border border-dark bg-warning " style=" width: 90%; height: 40px; font-size: 2rem; font-style: italic;">Mubeen</div>
-        <div class=" border border-2 border border-warning bg-info" style="width: 10%; height: 40px;  font-size: 2rem; font-style: italic;">Zulfiqar</div>
+    <h1 class="border-right text-info border-5 border-success">AnXaRi</h1>
+    <br>
+    <h1 class="border-bottom  text-danger border-5 border-warning">AnXaRi</h1>
+
+
+    <br><br><hr>
+    <div class="d-flex justify-content-center">
+        <div>
+            <label  style="font-style: oblique; font-size: 1.5rem;">Name</label>
+            <br>
+            <input id="fgm1" class="border border-3 border-danger" style=" font-style: oblique; height: 25px; width: 100%;" type="text" placeholder="Name">
+            <br>
+            <label  style="font-style: oblique; font-size: 1.5rem;">Father Name</label>
+            <br>
+            <input id="fgm2" class="border border-3 border-warning"  style="height: 25px; width: 100%; font-style: oblique;" type="text" placeholder="Father Name">
+            <br>
+            <label  style="font-style: oblique; font-size: 1.5rem;">Email</label>
+            <br>
+            <input id="fgm3" class="border border-3 border-success"  style="font-style: oblique; height: 25px; width: 100%;" type="email" placeholder="email">
+            <br>
+            <label style="font-style: oblique; font-size: 1.5rem;">password</label>
+            <br>
+            <input id="fgm4" class="border border-3 border-primary"   style="font-style: oblique; height: 25px; width: 100%;" type="password" placeholder="password">
+            <br><br>
+            <button onclick="submit()" class="border border-5 border-primary" style=" height: 35px; font-style: oblique; background-color: blue; color: beige;">Submit</button>
+            <br><br>
+        </div>
     </div>
-    
+    <h1 style="color: red;" id="result"></h1>
+    <script>
+        function submit(){
+            var fgm1 = document.getElementById("fgm1").value;
+            var fgm2 = document.getElementById("fgm2").value;
+            var fgm3 = document.getElementById("fgm3").value;
+            var fgm4 = document.getElementById("fgm4").value;
+
+            document.getElementById("result").innerHTML = fgm1 + " "+ fgm2 +" " + fgm3+ " " +fgm4 ;
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+</body>
 </body>
 </html>
